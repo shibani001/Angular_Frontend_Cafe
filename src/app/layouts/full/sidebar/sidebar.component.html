@@ -1,0 +1,37 @@
+<style>
+    mat-nav-list{
+        padding:20px;
+        
+       
+    }
+    a{
+        background-color:  #e53935;
+        color:white;
+        text-decoration: none;
+        padding:70px;
+       
+    }
+    a:hover{
+        color: white;
+    }
+    mat-icon{
+        margin-left:-60px;
+    }
+
+    
+
+</style>
+
+
+
+<mat-nav-list appAccordion>
+    <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" routeLinkActive="selected"
+    group="{{menuitem.state}}">
+    <a appAccordionToggle [routerLink]="['/cafe',menuitem.state]" *ngIf="(menuitem.role === '' || menuitem.role === tokenPayload.role)">
+        <mat-icon>{{ menuitem.icon }}</mat-icon>&nbsp;
+        <span><b>{{ menuitem.name }}</b></span>
+        <span fxFlex></span>
+    </a>
+
+    </mat-list-item>
+</mat-nav-list>

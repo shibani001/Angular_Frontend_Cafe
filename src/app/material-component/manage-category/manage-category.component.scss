@@ -1,0 +1,40 @@
+// @media(max-width: 800px) {
+//     .responsive_table {
+//         overflow-x:hidden;
+//     }
+  
+//     .mat-table {
+//         width:50%;
+//     }
+//   }
+
+.float-right{
+    width:10%;
+    float:right;
+}
+mat-card{
+    padding:20px;
+    padding-top:15px;
+    display: block;
+    margin-left: 20px;
+   
+    
+}
+mat-form-field{
+    width:100%;
+   
+}
+.filter{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.responsive-table{
+    width:98%;
+    margin-left:20px;
+    margin-top: 20px;
+    
+}
+body{
+    width:100%;
+    padding-bottom:50px;
+}
